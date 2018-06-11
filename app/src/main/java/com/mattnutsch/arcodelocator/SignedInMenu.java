@@ -267,7 +267,7 @@ public class SignedInMenu extends AppCompatActivity {
         Log.i("debug","debug point.");
 
         AuthorizationServiceConfiguration config = new AuthorizationServiceConfiguration(authEndpoint, tokenEndpoint, null);
-        AuthorizationRequest req = new AuthorizationRequest.Builder(config, "963585173987-h2gphk6cm5f0lm59dmkirhp19f4qlpvm.apps.googleusercontent.com", ResponseTypeValues.CODE, redirect)
+        AuthorizationRequest req = new AuthorizationRequest.Builder(config, "INSERT_KEY_HERE", ResponseTypeValues.CODE, redirect)
                 .setScopes("https://www.googleapis.com/auth/plus.me", "https://www.googleapis.com/auth/plus.stream.write", "https://www.googleapis.com/auth/plus.stream.read")
                 .build();
 
