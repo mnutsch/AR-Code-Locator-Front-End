@@ -178,7 +178,7 @@ public class SignedInMenu extends AppCompatActivity {
                         //HttpUrl reqUrl = HttpUrl.parse("https://www.googleapis.com/plusDomains/v1/people/me/activities/user");
                         HttpUrl reqUrl = HttpUrl.parse("https://www.googleapis.com/plusDomains/v1/people/me/?alt=json");
                         Log.i("debug", String.valueOf(reqUrl));
-                        reqUrl = reqUrl.newBuilder().addQueryParameter("key", "AIzaSyAX8rhmPsCn-bvSLE5LLzr9SRjmtJWyAiA").build();
+                        reqUrl = reqUrl.newBuilder().addQueryParameter("key", "INSERT_KEY_HERE").build();
                         Request request = new Request.Builder()
                                 .url(reqUrl)
                                 .addHeader("Authorization", "Bearer " + accessToken)
